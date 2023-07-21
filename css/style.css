@@ -114,7 +114,17 @@ ol a:focus {
   outline: none;
   text-decoration: none;
 }
-
+ol a.git {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: rgb(73, 99, 47);
+  display: block;
+  text-shadow: 0 0 1px rgba(184, 225, 164, 0.3);
+  transition: all 0.5s ease;
+}
+ol a.git:hover {
+  color: #343b38;
+}
 ol li {
   margin-bottom: 20px;
 }
