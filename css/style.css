@@ -7,6 +7,9 @@
   margin: 0;
   outline: none;
 }
+:root {
+  --index:calc(1vw + 1vh);
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -130,14 +133,14 @@ ol li {
 }
 
 .portfolio img {
-  width: 80%;
-  height: 30%;
+  width: calc(var(--index)*20);
+  height: calc(var(--index)*20);
   border: 2px solid silver;
   border-radius: 50%;
   background: #fff;
   margin-top: 50px;
 }
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .portfolio img {
     height: 20%;
   }
@@ -146,7 +149,7 @@ ol li {
   .portfolio img {
     height: 15%;
   }
-}
+} */
 
 @media (max-width: 767px) {
   .portfolio img {
